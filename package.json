@@ -1,28 +1,28 @@
 {
-  "name": "hypercore-promisifier",
-  "version": "1.1.0",
-  "description": "A Hypercore wrapper that lets you switch between callback and Promise APIs",
+  "name": "@ddatabase/promisifier",
+  "version": "1.0.0",
+  "description": "A dDatabase wrapper that lets you switch between callback and Promise APIs",
   "main": "index.js",
   "scripts": {
     "test": "standard && tape test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewosh/hypercore-promisifier.git"
+    "url": "https://github.com/"
   },
   "keywords": [
-    "hypercore",
+    "ddatabase",
     "promises"
   ],
-  "author": "Andrew Osheroff <andrewosh@gmail.com>",
+  "author": "PeepsLabs <peepslabs@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrewosh/hypercore-promisifier/issues"
+    "url": "https://github.com/"
   },
-  "homepage": "https://github.com/andrewosh/hypercore-promisifier#readme",
+  "homepage": "https://dwebx.org",
   "devDependencies": {
-    "hypercore": "^9.6.0",
-    "hyperspace": "^3.15.0",
+    "ddatabase": "^10.0.0",
+    "dhub": "^1.0.0",
     "ram": "0.0.3",
     "standard": "^16.0.3",
     "tape": "^5.0.1"
