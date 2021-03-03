@@ -1,37 +1,37 @@
-# hypercore-promisifier
-![Test on Node.js](https://github.com/andrewosh/hypercore-promisifier/workflows/Test%20on%20Node.js/badge.svg)
+ddatabase-promisifier
 
-A wrapper that provides conversion to/from callback/promise interfaces in Hypercore and RemoteHypercore.
+
+A wrapper that provides conversion to/from callback/promise interfaces in DDatabase and RemoteDDatabase.
 
 ## Installation
 ```
-npm i hypercore-promisifier
+npm i @ddatabase/promisifier
 ```
 
 ## Usage
 ```js
-const hypercore = require('hypercore')
+const ddatabase = require('ddatabase')
 const ram = require('random-access-memory')
-const { toPromises } = require('hypercore-promisifier')
+const { toPromises } = require('@ddatabase/promisifier')
 
-const core = hypercore(ram)
+const base = ddatabase(ram)
 
-// A promisified Hypercore interface
-const wrapper = toPromises(core)
+// A promisified DDatabase interface
+const wrapper = toPromises(base)
 ```
 
 ## API
-The API supports two methods, each one returning a compatibilty wrapper around Hypercore.
+The API supports two methods, each one returning a compatibilty wrapper around DDatabase.
 
-#### `const { toCallbacks, toPromises, unwrap } = require('hypercore-promisifier')`
+#### `const { toCallbacks, toPromises, unwrap } = require('@ddatabase/promisifier')`
 
-`toCallbacks(core)` takes a Hypercore-like object with a Promises API, and returns a wrapper with a
+`toCallbacks(base)` takes a DDatabase-like object with a Promises API, and returns a wrapper with a
 callbacks interfaced.
 
-`toPromises(core)` takes a Hypercore-like object with a callbacks API, and returns a wrapper with a
+`toPromises(base)` takes a DDatabase-like object with a callbacks API, and returns a wrapper with a
 Promises interface.
 
-`unwrap(core)` takes either a wrapper object, or a normal Hypercore, and returns a normal (callbacks API) Hypercore.
+`unwrap(base)` takes either a wrapper object, or a normal DDatabase, and returns a normal (callbacks API) DDatabase.
 
 ## License
 MIT
