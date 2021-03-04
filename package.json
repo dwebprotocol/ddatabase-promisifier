@@ -1,14 +1,14 @@
 {
   "name": "@ddatabase/promisifier",
   "version": "1.0.0",
-  "description": "A dDatabase wrapper that lets you switch between callback and Promise APIs",
+  "description": "A DDatabase wrapper that lets you switch between callback and Promise APIs.",
   "main": "index.js",
   "scripts": {
     "test": "standard && tape test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/dwebprotocol/ddatabase-promisifier.git"
   },
   "keywords": [
     "ddatabase",
@@ -17,7 +17,7 @@
   "author": "PeepsLabs <peepslabs@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/"
+    "url": "https://github.com/dwebprotocol/ddatabase-promisifier/issues"
   },
   "homepage": "https://dwebx.org",
   "devDependencies": {
